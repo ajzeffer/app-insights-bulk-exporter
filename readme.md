@@ -9,6 +9,7 @@ new BulkDataExportService("{AppID}","{AuthKey}")
 
 ```
 
+This will output all data files to the `/data` folder and then merge all the files into a final `result.csv` file
 
 ## Azure App Insights Settings 
 There are two settings required to connect to the App insights api
