@@ -1,8 +1,8 @@
 # Application Insights CSV Data Exporter 
 
-App insights has a limitation of 10k records returned via the log UI. When dealing with larger datasets  and not having a process in place to push the data downstream, we realized we needed a process to pull down data via the API and then pump it into a CSV so that we could run some local analysis on it.
+App insights has a limitation of 10k records returned via the log UI. When dealing with larger datasets and not having a process in place to push the data downstream, we realized we needed a process to pull down data via the API and then pump it into a CSV so that we could run some local analysis on it.
 
-## Azure App Insights Settings 
+# Azure App Insights Settings 
 There are two settings required to connect to the App insights api
 `AppId` and `AuthKey` Both can be found by going to the AI instance in portal
 
@@ -36,3 +36,9 @@ and a decrement of 1
 ## TimeIncrementType enum
 There are three lookback increment types
 Days, Hours, Minutes
+
+## Running the App
+
+```
+npm run start 
+```
